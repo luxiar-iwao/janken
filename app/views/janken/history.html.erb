@@ -1,2 +1,18 @@
-<h1>Janken#history</h1>
-<p>Find me in app/views/janken/history.html.erb</p>
+<h1>結果リスト</h1>
+
+<table border="1">
+  <td>あなた</td>
+  <td>あいて</td>
+  <td>結果</td>
+  <% @results.each do |result| %>
+    <tr>
+      <td><%= result.your_hand %></td>
+      <td><%= result.computer_hand %></td>
+      <td><%= result.result %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p>
+  <%= link_to "戻る", root_path %>
+</p>
