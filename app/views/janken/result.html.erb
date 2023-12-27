@@ -1,2 +1,7 @@
-<h1>Janken#result</h1>
-<p>Find me in app/views/janken/result.html.erb</p>
+<h1>じゃんけん結果</h1>
+<p>あなた: <%= @hand %></p>
+<p>あいて: <%= @computer_hand %></p>
+<p>結果: <%= @result %></p>
+<p>
+  <%= link_to "戻る", root_path %>
+</p>
