@@ -1,2 +1,13 @@
-<h1>Janken#select</h1>
-<p>Find me in app/views/janken/select.html.erb</p>
+<h1>じゃんけんしよう</h1>
+
+<p>
+  <%= link_to 'グー', result_path(hand: 'グー') %>
+</p>
+
+<p>
+  <%= link_to 'チョキ', result_path(hand: 'チョキ') %>
+</p>
+
+<p>
+  <%= link_to 'パー', result_path(hand: 'パー') %>
+</p>

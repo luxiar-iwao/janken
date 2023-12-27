@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get 'janken/select'
   get 'janken/result'
   get 'janken/history'
+  get 'result', to: 'janken#result'
 end

@@ -3,6 +3,7 @@ class JankenController < ApplicationController
   end
 
   def result
+    @hand = params[:hand]
   end
 
   def history
